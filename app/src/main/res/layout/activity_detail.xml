@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_500">
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-20dp"
+                android:background="@drawable/ic_baseline_arrow_back_24" />
+
+            <TextView
+                android:id="@+id/T_judul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                tools:text="JUDUL" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/header" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="-120dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/subHeader">
+
+            <LinearLayout
+                android:id="@+id/sub_judul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E1E7F5"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/judul_anime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@+id/image_anime"
+                    android:textSize="20sp"
+                    tools:text="Judul Anime" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/image_anime"
+                android:layout_width="150dp"
+                android:layout_height="220dp"
+                android:layout_below="@+id/sub_judul"
+                tools:src="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sub_judul"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_toEndOf="@+id/image_anime"
+                android:drawableStart="@drawable/ic_baseline_star_outline_24"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:text="Rating" />
+
+            <TextView
+                android:id="@+id/jumlah_eps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rating"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="25dp"
+                android:layout_toEndOf="@+id/image_anime"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="TV(..eps)" />
+
+            <TextView
+                android:id="@+id/judul_musim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/jumlah_eps"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@+id/image_anime"
+                android:text="Musim" />
+
+            <TextView
+                android:id="@+id/musim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/judul_musim"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/image_anime"
+                android:text="Summer 2022"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/judul_studio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/musim"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@+id/image_anime"
+                android:text="Studios" />
+
+            <TextView
+                android:id="@+id/studio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/judul_studio"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/image_anime"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="Studio anime" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Sinopsis"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/action_sinopsis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:textSize="13sp"
+            tools:text="Lorem ipsum asdfasjdfnoasdfoasldjf" />
+    </LinearLayout>
+</ScrollView>

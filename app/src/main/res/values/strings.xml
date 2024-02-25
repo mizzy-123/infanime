@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Anime</string>
+    <string name="nama">Muhammad Mizzy</string>
+    <string name="email">decarabian21@gmail.com</string>
+
+    <string name="classroom">Anime ini menceritakan tentang sekolah menengah atas Kiyotaka Ayanokoji,
+        yang lebih suka menjaga dirinya sendiri daripada berteman dengan sesama siswa Kelas-D.</string>
+
+    <string name="overlord">Overlord adalah anime Isekai yang bertemakan game online MMORPG yang dapat membuat pemainnya bisa berpetualang.
+        Namun sesuai namanya, salah satu tokoh utama pada anime ini memiliki kekuatan yang Overlord karena sudah mencapai level maksimal dalam game ini.</string>
+</resources>
